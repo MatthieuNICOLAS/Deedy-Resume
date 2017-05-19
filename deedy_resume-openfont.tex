@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Deedy - One Page Two Column Resume
 % LaTeX Template
-% Version 1.2 (16/9/2014)
+% Version 1.1 (30/4/2014)
 %
 % Original author:
 % Debarghya Das (http://debarghyadas.com)
@@ -15,16 +15,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -44,13 +44,13 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
 
 \documentclass[]{deedy-resume-openfont}
-\usepackage{fancyhdr}
- 
-\pagestyle{fancy}
-\fancyhf{}
- 
+
+\usepackage{ragged2e}
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -58,186 +58,253 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     CONTACT INFORMATION
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\contact
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Debarghya}{Das}{ \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
-\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{minipage}[t]{0.33\textwidth} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Education} 
-
-\subsection{Cornell University}
-\descript{MEng in Computer Science}
-\location{Dec 2014 | Ithaca, NY}
-\sectionsep
-
-\subsection{Cornell University}
-\descript{BS in Computer Science}
-\location{May 2014 | Ithaca, NY}
-College of Engineering \\
-Magna Cum Laude\\
-\location{ Cum. GPA: 3.83 / 4.0 \\
-Major GPA: 3.9 / 4.0}
-\sectionsep
-
-\subsection{La Martiniere for Boys}
-\location{Grad. May 2011|  Kolkata, India}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Links} 
-Facebook:// \href{https://facebook/dd}{\bf dd} \\
-Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
-LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
-YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
-Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
-Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-\subsection{Graduate}
-Advanced Machine Learning \\
-Open Source Software Engineering \\
-Advanced Interactive Graphics \\
-Compilers + Practicum \\
-Cloud Computing \\
-Evolutionary Computation \\
-Defending Computer Networks \\
-Machine Learning \\
-\sectionsep
-
-\subsection{Undergraduate}
-Information Retrieval \\
-Operating Systems \\
-Artificial Intelligence + Practicum \\
-Functional Programming \\
-Computer Graphics + Practicum \\
-{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
-Unix Tools and Scripting \\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
-\location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\namesection{Matthieu}{NICOLAS}{ \href{mailto:matthieu.nicolas@inria.fr}{matthieu.nicolas@inria.fr} | 06 75 98 34 40 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Experience}
-\runsubsection{Facebook}
-\descript{| Software Engineer }
-\location{Jan 2015 - Present | New York, NY}
+\section{Expériences}
+
+\runsubsection{Ingénieur Recherche \& Développement}
+\descript{| INRIA, équipe COAST}
+\location{ CDD | Septembre 2016 – Juin 2017 | Nancy}
 \sectionsep
 
-\runsubsection{Coursera}
-\descript{| KPCB Fellow + Software Engineering Intern }
-\location{June 2014 – Sep 2014 | Mountain View, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+\runsubsection{Ingénieur Jeune Diplômé}
+\descript{| INRIA, équipe COAST}
+\location{ CDD | Septembre 2014 – Août 2016 | Nancy}
+\sectionsep
+
+\runsubsection{Élève-ingénieur}
+\descript{| TELECOM Nancy}
+\location{Diplôme d'ingénieur TELECOM Nancy, spécialité Ingénierie du Logiciel }
+\location{Septembre 2011 – Août 2014 | Nancy}
+\sectionsep
+
+\runsubsection{Élève-technicien}
+\descript{| IUT de Metz}
+\location{DUT Informatique}
+\location{Septembre 2009 – Juin 2011 | Metz}
+\sectionsep
+
+\section{Projets}
+
+\descript{TVPaint}
+TVPaint Animation est un logiciel permettant de réaliser des films d'animation.\\
+TODO: Rappeler problématique => passer d'une application desktop à une architecture client/serveur avec composante gestion de projet
+\begin{tightemize}
+\item Réalisation d'un état de l'art sur les mécanismes d'authentification
+\item Modélisation du processus de réalisation d'un film d'animation en utilisant un outil de BPM
+\item Conception de la nouvelle architecture de l'application
+\item Réalisation d'un POC
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Google}
-\descript{| Software Engineering Intern }
-\location{May 2013 – Aug 2013 | Mountain View, CA}
+\descript{MUTE}
+\href{https://www.coedit.re}{\customboldlink{MUTE}} est un outil d'édition collaborative temps réel développé au sein de l'équipe
+pour illustrer ses travaux sur les algorithmes de réplication de données et les mécanismes de maintien de la cohérence à terme.
 \begin{tightemize}
-\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.\item Created a backbone.js-like framework for the Captions editor.\end{tightemize}
+\item Mise à jour des technologies utilisées
+\item Refonte de l'architecture de l'application
+\item Mise en place d'un système d'anti-entropie (TODO: Délivrable OpenPaas)
+\item Correction de bugs présents dans l'implémentation de \emph{LogootSplit} utilisée
+\end{tightemize}
 \sectionsep
 
-\runsubsection{Phabricator}
-\descript{| Open Source Contributor \& Team Leader}
-\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+\descript{PLM}
+\href{http://people.irisa.fr/Martin.Quinson/Teaching/PLM/}{\customboldlink{La PLM}} est un environnement d’apprentissage de la programmation libre et ouvert
+permettant d’explorer différents aspects de l’algorithmique au travers d’exercices interactifs et graphiques.\\
+Ma principale tâche a été d'effectuer le portage de l'existant, un client lourd Java, en une application web.\\
+Ce changement important a entraîné l'apparition de plusieurs problématiques auxquelles il a fallu apporter des solutions :
 \begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
+\item Conception et mise en place d'une architecture distribuée assurant le passage à l'échelle de l'application
+\item Isolation de l'exécution du code des apprenants
+\item Déploiement et supervision d'une application multi-composants
+\end{tightemize}
+\sectionsep
+
+\descript{artEoz}
+\href{http://arteoz.loria.fr/}{artEoz} est un outil dédié à l'enseignement de la programmation.
+Il permet de générer et de visualiser le schéma mémoire correspondant à l'exécution du code Java ou Python saisi par l'utilisateur.\\
+Disponible sous la forme d'une application desktop,
+\begin{tightemize}
+\item TODO
+\end{tightemize}
+\sectionsep
+
+\runsubsection{INRIA, équipe SCORE}\\
+\location{ Stage | Avril 2014 – Août 2014 | Nancy}
+
+\descript{MUTE}
+Developpement de \emph{MUTE}, un outil d'edition collaborative temps réel
+\begin{tightemize}
+\item Implémentation sous forme de librairie de \emph{LogootSplit}, un algorithme de réplication des données et de maintien de la cohérence à terme issu des travaux de l'équipe
+\item Implémentation d'un éditeur collaboratif temps réel en ligne reposant sur cette librairie
+\end{tightemize}
+\sectionsep
+
+\runsubsection{École Polytechnique de Montréal}\\
+\location{Stage | Avril 2011 – Juin 2011 | Montréal, Canada}
+\descript{Developpement d’un outil d'analyse d'algorithmes d'edition collaborative }
+Les outils d'édition collaborative existants reposent majoritairement sur une famille spécifique d'algorithmes
+pour assurer le maintien de la cohérence à terme : les transformées opérationnelles.\\
+Deux propriétés de convergences \emph{TP1} et \emph{TP2} existent et permettent de prouver la correction de ces algorithmes.\\
+L'objectif de ce stage était de réaliser un outil permettant de vérifier automatiquement le respect de ces propriétés pour un algorithme donné.
+\begin{tightemize}
+\item Implémentation de plusieurs algorithmes issus de la famille des transformées opérationnelles
+\item Développement de l'outil permettant de vérifier les propriétés de convergences \emph{TP1} et \emph{TP2} pour les algorithmes implémentés.
+\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
+%     TEACHING
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Researcher}
-\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
-\sectionsep
+\section{Enseignement}
 
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+\runsubsection{Bases de la Programmation Orientée Objet}\\
+\location{Licence 2}
+TODO: Bases de la POO\\
+\begin{tabular}{cl}
+2017            & Chargé de TP. Préparation et animation de l'atelier du TP noté.
 \end{tabular}
+\sectionsep
+
+\runsubsection{Préparation de l'informatique}\\
+\location{1A ingénieur - TELECOM Nancy}
+TODO: bases de l'info grâce à PLM\\
+\begin{tabular}{cl}
+2015-2016       & Responsable du module\\
+2014            & ?
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     MANAGEMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Encadrement}
+
+\runsubsection{Simulation du comportement de collaborateurs dans une session d’édition collaborative}
+\descript{}
+\location{Projet d'initiation à la recherche | Janvier 2017 - Mai 2017}
+Co-encadrant de 2 étudiants de 2A ingénieur - TELECOM Nancy
+\sectionsep
+
+\runsubsection{Service de compilation isolé pour la PLM}
+\descript{}
+\location{Stage | Juin 2015 - Août 2015}
+Co-encadrant d'un étudiant de 2A ingénieur - TELECOM Nancy
+\sectionsep
+
+\runsubsection{Mass Error Mediation in a Learning Environment}
+\descript{}
+\location{Stage | Juin 2015 - Août 2015}
+Co-encadrant d'un étudiant de 2A ingénieur - TELECOM Nancy
+\sectionsep
+
+\runsubsection{Mise en place d'un environnement de qualification pour la plateforme PLM}
+\descript{}
+\location{Stage | Juin 2015 - Août 2015}
+Co-encadrant d'un étudiant de 2A ingénieur - TELECOM Nancy
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Publications} 
+\section{Publications}
 \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
 \bibliographystyle{abbrv}
 \bibliography{publications}
 \nocite{*}
 
-\end{minipage} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COMMUNICATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Communication}
+
+\runsubsection{Démo de MUTE} %MUTE, a Peer-to-Peer Real-Time Web Collaborative Editor
+\descript{| HCERES}
+\location{13 décembre 2016}
+\sectionsep
+
+\runsubsection{Démo de MUTE}
+\descript{| Rencontres Inria Industrie "Nouvelles technologies pour la protection des données et des systèmes numériques"  }
+\location{8 décembre 2016}
+\sectionsep
+
+\runsubsection{Démo de MUTE}
+\descript{| Délégation de Recteurs des universités de technologie du Mexique }
+\location{01 décembre 2016}
+\sectionsep
+
+\runsubsection{Démo de MUTE}
+\descript{| Rencontres Inria Industrie "Interaction avec les objets et services numériques"  }
+\location{25 novembre 2016}
+\sectionsep
+
+\runsubsection{Démo de MUTE}
+\descript{| Évaluation INRIA }
+\location{14 octobre 2016}
+\sectionsep
+
+\runsubsection{Présentation de PLM}
+\descript{| Séminaire Ingénieurs Jeunes Diplômés}
+\location{02 février 2016}
+\sectionsep
+
+\runsubsection{Présentation de PLM}
+\descript{| Séminaire Ingénieurs Jeunes Diplômés}
+\location{03 mars 2015}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards}
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%2010     & National & Comp. Soc. of India's National Programming Contest\\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Societies}
+
+%\begin{tabular}{rll}
+%2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+%2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+%2012   &  National  & Golden Key International Honor Society\\
+%2012   &  National   & National Society of Collegiate Scholars\\
+%\end{tabular}
+%\sectionsep
+
+\hfill
 \end{document}  \documentclass[]{article}

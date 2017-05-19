@@ -10,23 +10,28 @@
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, urlcolor=href]{hyperref}
 
 % Publications
 \usepackage{cite}
 \renewcommand\refname{\vskip -1.5cm}
 
 % Color definitions
-\usepackage[usenames,dvipsnames]{xcolor} 
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{date}{HTML}{666666}
+\definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
+\definecolor{href}{HTML}{428BCA}
 
 % Set main fonts
 \usepackage{fontspec}
 \setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
+
+% Link commands
+\newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
+\newcommand{\customboldlink}[1]{\color{href}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
 
 % Date command
 \usepackage[absolute]{textpos}
@@ -34,15 +39,17 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
 Last Updated on \today
 \end{textblock}}
 
 % Name command
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 \newcommand{\namesection}[3]{
 \centering{
 \fontsize{40pt}{60pt}
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
+\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]
 \centering{
@@ -52,9 +59,23 @@ Last Updated on \today
 \vspace{-15pt}
 }
 
-% Section seperators 
+% Contact command
+\newcommand{\contact}{\begin{textblock}{40}[0, 0](150,3)
+\includegraphics[scale=0.08]{mail}\ \href{mailto:matthieu.nicolas@inria.com}{matthieu.nicolas@inria.fr}
+\end{textblock}
+\begin{textblock}{40}[0, 0](150,8)
+\includegraphics[scale=0.09]{phone}\ 06 75 98 34 40
+\end{textblock}
+\begin{textblock}{40}[0, 0](150,13)
+\includegraphics[scale=0.09]{home}\ 30 Avenue Saint-Sébastien,
+\end{textblock}
+\begin{textblock}{40}[0, 0](153,18)
+54600 Villers-lès-Nancy
+\end{textblock}}
+
+% Section seperators
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{0pt}{0pt} 
+\titlespacing{\section}{0pt}{0pt}{0pt}
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \newcommand{\sectionsep}{\vspace{8pt}}
 
@@ -67,7 +88,7 @@ Last Updated on \today
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
@@ -81,4 +102,3 @@ Last Updated on \today
 \newenvironment{tightemize}{
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
-

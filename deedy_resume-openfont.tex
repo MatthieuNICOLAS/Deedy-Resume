@@ -85,10 +85,89 @@
 \location{Septembre 2016 – Juin 2017 | Nancy}
 \sectionsep
 
+\hfill\begin{minipage}{\dimexpr\textwidth-0.5cm}
+\descript{Projet OpenPaaS::NG}
+Ce projet a pour objectif la réalisation d'un réseau social d'entreprise open-source
+incorporant une suite d'applications collaboratives de bureautique.
+Le but est ainsi de proposer une alternative viable et libre
+à des solutions telles que Google Apps.
+\\
+% TODO: Présenter le rôle de l'équipe dans ce projet
+% TODO: Introduire les tâches effectuées
+L'ensemble des travaux réalisés ont été implémentés dans la plateforme de démonstration
+\href{https://www.coedit.re}{\customboldlink{MUTE}}.
+\begin{tightemize}
+\item Correction de bugs présents dans l'implémentation de \emph{LogootSplit}\cite{sp2-l2-9}\cite{sp2-l2-10}
+\item Lecture de la littérature sur les types de données répliquées sans conflits existants et leurs cas d'utilisation
+\item Développement et intégration d'un système d'anti-entropie\cite{sp2-l2-2}
+\end{tightemize}
+\sectionsep
+
+\location{Publications}
+\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\descript{Projet Region avec la societe TVPaint Animation}
+TVPaint Animation est un logiciel, distribué sous la forme d'une application lourde, de dessin et d'animation 2D utilisé pour la réalisation de films d'animation.
+\\
+Ce projet s'inscrit dans la conception de la nouvelle version du logiciel.
+Cette nouvelle version apporte plusieurs nouvelles fonctionnalités,
+notamment un système automatique de synchronisation des données pour simplifier la collaboration entre plusieurs acteurs
+ainsi qu'un outil de gestion de production.
+Ces changements conduisent à une évolution de l'architecture de l'application vers une architecture client-serveur.
+\\
+Dans le cadre de ce projet, l'équipe COAST intervient afin d'apporter son expertise sur les mécanismes de réplication de données de manière sécurisée
+et sur la conception de systèmes distribués.
+\\
+Mon rôle a été d'aider à la conception de la nouvelle architecture de l'application
+mais aussi de prototyper l'utilisation d'un outil de gestion de processus métiers (BPM) comme outil de gestion de projet.
+\begin{tightemize}
+\item Réalisation et présentation d'un état de l'art sur les mécanismes d'authentification
+\item Modélisation du processus de réalisation d'un film d'animation en utilisant un outil de BPM
+\item Conception de la nouvelle architecture de l'application
+\item Réalisation d'une preuve de concept orchestrant les différents services pour jouer un scénario type d'utilisation
+\end{tightemize}
+\sectionsep
+
+\descript{Plateforme artEoz}
+\href{http://arteoz.loria.fr/}{\customboldlink{artEoz}} est un outil dédié à l'enseignement de la programmation développé par Martine Gautier et Brigitte Wrobel-Dautcourt.
+Il permet de générer et de visualiser le schéma mémoire correspondant à l'exécution du code Java ou Python saisi par l'utilisateur.
+\\
+Distribué auparavant sous la forme d'une application lourde, le but de ce projet était de développer une version web de l'outil pour simplifier sa diffusion et son utilisation.
+\\
+Cet objectif s'apparentant à celui de mes précédents travaux sur la PLM, j'ai pu apporter mon expérience aux porteurs de ce projet.
+\begin{tightemize}
+\item Présentation et aide à l'apprentissage des technologies à utiliser
+\item Présentation et justification de l'architecture cible
+\end{tightemize}
+
+\sectionsep\xdef\tpd{\the\prevdepth}
+\end{minipage}
+
 \runsubsection{Ingénieur Jeune Diplômé}
 \descript{| INRIA, equipe COAST}
 \location{Septembre 2014 – Août 2016 | Nancy}
 \sectionsep
+
+\hfill\begin{minipage}{\dimexpr\textwidth-0.5cm}
+\descript{ADT Inria PLM}
+\href{http://people.irisa.fr/Martin.Quinson/Teaching/PLM/}{\customboldlink{La PLM}} est un environnement d’apprentissage de la programmation libre et ouvert.
+Développé par Gérald Oster et Martin Quinson, il permet d’explorer différents aspects de l’algorithmique au travers d’exercices interactifs et graphiques.
+\\
+Disponible historiquement sous la forme d'une application lourde Java, le but de ce projet était d'effectuer le portage de cet outil en une application web
+afin de le rendre accessible au plus grand nombre.
+\\
+Ma principale tâche a donc été d'effectuer ce portage.
+Ce changement important de type d'application a entraîné l'apparition de plusieurs problématiques auxquelles il a fallu apporter des solutions :
+\begin{tightemize}
+\item Conception et mise en place d'une architecture distribuée assurant le passage à l'échelle de l'application
+\item Isolation de l'exécution du code des apprenants
+\item Déploiement et supervision d'une application multi-composants
+\end{tightemize}
+\sectionsep\xdef\tpd{\the\prevdepth}
+\end{minipage}
 
 \runsubsection{Élève-ingénieur}
 \descript{| TELECOM Nancy}
@@ -97,7 +176,7 @@
 \sectionsep
 
 \hfill\begin{minipage}{\dimexpr\textwidth-0.5cm}
-\descript{Realisation d’une plateforme d’edition collaborative | INRIA, equipe SCORE}
+\descript{Realisation d’une plateforme d’edition collaborative | LORIA, equipe COAST}
 \location{Stage | Avril 2014 – Août 2014 | Nancy}
 Issue des travaux sur l'édition collaborative, une nouvelle famille d'algorithmes de réplication des données
 et de maintien de la cohérence à terme est apparue récemment : l'approche CRDT (Conflict-free Replicated Data Type).
@@ -107,10 +186,10 @@ notamment concernant la capacité de passage à l'échelle.
 L'équipe SCORE, travaillant sur ce domaine de recherche, a proposé un nouvel algorithme de cette famille : \emph{LogootSplit}.
 \\
 Afin d'illustrer et de mettre en valeur les travaux de l'équipe sur cette approche,
-ma tâche a été de développer un éditeur collaboratif temps réel se basant sur cet algorithme.
+ma tâche a été de concevoir et de développer un éditeur collaboratif temps réel se basant sur cet algorithme.
 \begin{tightemize}
 \item Implémentation sous forme de librairie de \emph{LogootSplit}
-\item Développement de \href{https://www.coedit.re}{\customboldlink{MUTE}}, un éditeur collaboratif temps réel en ligne reposant sur cette librairie
+\item Conception et développement de \href{https://www.coedit.re}{\customboldlink{MUTE}}, un éditeur collaboratif temps réel en ligne reposant sur cette librairie
 \end{tightemize}
 \sectionsep\xdef\tpd{\the\prevdepth}
 \end{minipage}
@@ -127,7 +206,7 @@ ma tâche a été de développer un éditeur collaboratif temps réel se basant 
 Les outils d'édition collaborative existants reposent majoritairement sur une famille spécifique d'algorithmes
 pour assurer le maintien de la cohérence à terme : les transformées opérationnelles.
 \\
-Deux propriétés de convergence \emph{TP1} et \emph{TP2} existent et permettent de prouver la correction de ces algorithmes.
+Deux propriétés de convergence \emph{TP1} et \emph{TP2} existent et permettent de garantir la correction de ces algorithmes.
 \\
 L'objectif de ce stage était de réaliser un outil permettant de vérifier automatiquement le respect de ces propriétés pour un algorithme donné.
 \begin{tightemize}
@@ -136,76 +215,6 @@ L'objectif de ce stage était de réaliser un outil permettant de vérifier auto
 \end{tightemize}
 \sectionsep\xdef\tpd{\the\prevdepth}
 \end{minipage}
-
-\section{Projets}
-
-\descript{TVPaint}
-TVPaint Animation est un logiciel, distribué sous la forme d'une application lourde, de dessin et d'animation 2D utilisé pour la réalisation de films d'animation.
-\\
-Ce projet s'inscrit dans la conception de la nouvelle version du logiciel.
-Cette nouvelle version apporte plusieurs nouvelles fonctionnalités,
-notamment un système automatique de synchronisation des données pour simplifier la collaboration entre plusieurs acteurs
-ainsi qu'un outil de gestion de production.
-Ces changements conduisent à une évolution de l'architecture de l'application vers une architecture client-serveur.
-\\
-Dans le cadre de ce projet, l'équipe COAST intervient afin d'apporter son expertise sur les mécanismes de réplication de données de manière sécurisée
-et sur la conception de systèmes distribués.
-\\
-Mon rôle a donc été d'aider à la conception de la nouvelle architecture de l'application
-mais aussi de prototyper l'utilisation d'un outil de BPM comme outil de gestion de projet.
-\begin{tightemize}
-\item Réalisation et présentation d'un état de l'art sur les mécanismes d'authentification
-\item Modélisation du processus de réalisation d'un film d'animation en utilisant un outil de BPM
-\item Conception de la nouvelle architecture de l'application
-\item Réalisation d'une preuve de concept orchestrant les différents services pour jouer un scénario type d'utilisation
-\end{tightemize}
-\sectionsep
-
-\descript{OpenPaaS::NG}
-Ce projet a pour objectif la réalisation d'un réseau social d'entreprise open-source
-incorporant une suite d'applications collaboratives de bureautique.
-Le but est ainsi de proposer une alternative viable et libre
-à des solutions telles que Google Apps.
-\\
-% TODO: Présenter le rôle de l'équipe dans ce projet
-% TODO: Introduire les tâches effectuées
-L'ensemble des travaux réalisés ont été implémentés dans la plateforme de démonstration
-\href{https://www.coedit.re}{\customboldlink{MUTE}}.
-\begin{tightemize}
-\item Correction de bugs présents dans l'implémentation de \emph{LogootSplit}
-\item Étude des types de données répliquées sans conflits existants et de leurs cas d'utilisation
-\item Développement et intégration d'un système d'anti-entropie
-\end{tightemize}
-\sectionsep
-
-\descript{PLM}
-\href{http://people.irisa.fr/Martin.Quinson/Teaching/PLM/}{\customboldlink{La PLM}} est un environnement d’apprentissage de la programmation libre et ouvert.
-Développé par Gérald Oster et Martin Quinson, il permet d’explorer différents aspects de l’algorithmique au travers d’exercices interactifs et graphiques.
-\\
-Disponible historiquement sous la forme d'une application lourde Java, le but de ce projet était d'effectuer le portage de cet outil en une application web
-afin de le rendre accessible au plus grand nombre.
-\\
-Ma principale tâche a donc été d'effectuer ce portage.
-Ce changement important de type d'application a entraîné l'apparition de plusieurs problématiques auxquelles il a fallu apporter des solutions :
-\begin{tightemize}
-\item Conception et mise en place d'une architecture distribuée assurant le passage à l'échelle de l'application
-\item Isolation de l'exécution du code des apprenants
-\item Déploiement et supervision d'une application multi-composants
-\end{tightemize}
-\sectionsep
-
-\descript{artEoz}
-\href{http://arteoz.loria.fr/}{\customboldlink{artEoz}} est un outil dédié à l'enseignement de la programmation développé par Martine Gautier et Brigitte Wrobel-Dautcourt.
-Il permet de générer et de visualiser le schéma mémoire correspondant à l'exécution du code Java ou Python saisi par l'utilisateur.
-\\
-Distribué auparavant sous la forme d'une application lourde, le but de ce projet était de développer une version web de l'outil pour simplifier sa diffusion et son utilisation.
-\\
-Cet objectif s'apparentant à celui de mes précédents travaux sur la PLM, j'ai pu apporter mon expérience aux porteurs de ce projet.
-\begin{tightemize}
-\item Présentation et aide à l'apprentissage des technologies à utiliser
-\item Présentation et justification de l'architecture cible
-\end{tightemize}
-\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TEACHING
@@ -216,7 +225,7 @@ Cet objectif s'apparentant à celui de mes précédents travaux sur la PLM, j'ai
 \runsubsection{Bases de la Programmation Objet}
 \\
 \location{Licence 2 Informatique - Faculté des Sciences et Technologies de Nancy}
-L'objectif de ce module est d'enseigner aux étudiants le paradigme de la programmation orienté objet et ses spécificités (classe, héritage, polymorphisme...),
+L'objectif de ce module est d'enseigner aux étudiants le paradigme de la programmation orientée objet et ses spécificités (classe, héritage, polymorphisme...),
 ainsi que les bonnes pratiques de développement (programmation par contrat, tests...).
 \\
 Ces concepts sont ensuite mis en application dans le cadre de multiples exercices à réaliser en Java.
@@ -225,7 +234,7 @@ Ces concepts sont ensuite mis en application dans le cadre de multiples exercice
 2017            & Chargé de TP\newline
                   Préparation et animation de l'atelier du TP noté\newline
                   \emph{Volume horaire} : 18 heures TP\newline
-                  \emph{Responsables du module} : Martine Gautier\\
+                  \emph{Responsable du module} : Martine Gautier\\
 \end{tabular}
 \sectionsep
 
@@ -251,26 +260,22 @@ Dans le cadre de ce module, les étudiants travaillent de façon autonome sur l'
 
 \section{Encadrement}
 
-\runsubsection{Simulation du comportement de collaborateurs dans une session d’édition collaborative}
-\descript{}
+\descript{Simulation du comportement de collaborateurs dans une session d’edition collaborative}
 \location{Projet d'initiation à la recherche | Janvier 2017 - Mai 2017}
 Co-encadrant de 2 étudiants de 2A ingénieur - TELECOM Nancy
 \sectionsep
 
-\runsubsection{Service de compilation isolé pour la PLM}
-\descript{}
+\descript{Service de compilation isole pour la PLM}
 \location{Stage | Juin 2015 - Août 2015}
 Co-encadrant d'un étudiant de 2A ingénieur - TELECOM Nancy
 \sectionsep
 
-\runsubsection{Mass Error Mediation in a Learning Environment}
-\descript{}
+\descript{Mass Error Mediation in a Learning Environment}
 \location{Stage | Juin 2015 - Août 2015}
 Co-encadrant d'un étudiant de 2A ingénieur - TELECOM Nancy
 \sectionsep
 
-\runsubsection{Mise en place d'un environnement de qualification pour la plateforme PLM}
-\descript{}
+\descript{Mise en place d'un environnement de qualification pour la plateforme PLM}
 \location{Stage | Juin 2015 - Août 2015}
 Co-encadrant d'un étudiant de 2A ingénieur - TELECOM Nancy
 \sectionsep
@@ -278,12 +283,6 @@ Co-encadrant d'un étudiant de 2A ingénieur - TELECOM Nancy
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Publications}
-\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COMMUNICATION
@@ -294,9 +293,9 @@ Co-encadrant d'un étudiant de 2A ingénieur - TELECOM Nancy
 \runsubsection{Présentation des travaux autour de MUTE}
 \descript{}
 \begin{tabular}{cp{150mm}}
-13 décembre 2016       & HCERES\\
+13 décembre 2016       & Évaluation HCERES du LORIA\\
 08 décembre 2016       & Rencontres Inria Industrie "Nouvelles technologies pour la protection des données et des systèmes numériques"\\
-01 décembre 2016       & Délégation de Recteurs des universités de technologie du Mexique\\
+01 décembre 2016       & Visite d'une délégation de Recteurs des Universités Technologiques du Mexique\\
 25 novembre 2016       & Rencontres Inria Industrie "Interaction avec les objets et services numériques"\\
 14 octobre 2016        & Séminaire d'évaluation des équipes INRIA sur le thème "Systèmes distribués et middleware"\\
 \end{tabular}

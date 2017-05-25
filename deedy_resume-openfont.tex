@@ -160,15 +160,26 @@ Cet objectif s'apparentant à celui de mes précédents travaux sur la PLM, j'ai
 
 \hfill\begin{minipage}{\dimexpr\textwidth-0.5cm}
 \descript{ADT Inria PLM}
-\href{http://people.irisa.fr/Martin.Quinson/Teaching/PLM/}{\customboldlink{La PLM}} est un environnement d’apprentissage de la programmation libre et ouvert.
-Développé par Gérald Oster et Martin Quinson, il permet d’explorer différents aspects de l’algorithmique au travers d’exercices interactifs et graphiques.
+\href{http://people.irisa.fr/Martin.Quinson/Teaching/PLM/}{\customboldlink{La PLM}}
+est un environnement d’apprentissage de la programmation libre et ouvert.
+Développé par Gérald Oster et Martin Quinson, il permet d’explorer différents aspects de l’algorithmique
+au travers d’exercices interactifs.
 \\
-Disponible historiquement sous la forme d'une application lourde Java, le but de ce projet était d'effectuer le portage de cet outil en une application web
-afin de le rendre accessible au plus grand nombre.
+Le but de ce projet était de faire évoluer cet outil en une plateforme expérimentale
+pour l'enseignement de la programmation informatique.
+Pour cela, un mécanisme de capture des traces d'utilisation des apprenant
+devait être intégré afin de générer un corpus de données.
+Ce corpus, mis à disposition de chercheurs, devait permettre
+la conduite de travaux de recherche, tel que la conception d'outils d'aide automatique à l'apprentissage.
+Un second objectif ce projet était d'effectuer le portage de l'outil,
+jusqu'à alors disponible sous la forme d'une application lourde Java,
+en une application web afin de le rendre accessible au plus grand nombre.
 \\
-Ma principale tâche a donc été d'effectuer ce portage.
-Ce changement important de type d'application a entraîné l'apparition de plusieurs problématiques auxquelles il a fallu apporter des solutions :
+Mes travaux se sont principalement focalisés sur la réalisation de ce portage.
+Ce changement important de type d'application a entraîné l'apparition de plusieurs problématiques
+auxquelles il a fallu apporter des solutions.
 \begin{tightemize}
+\item Implémentation et test du mécanisme de capture des traces d'utilisation
 \item Conception et mise en place d'une architecture distribuée assurant le passage à l'échelle de l'application
 \item Isolation de l'exécution du code des apprenants
 \item Déploiement et supervision d'une application multi-composants

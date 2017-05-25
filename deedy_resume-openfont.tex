@@ -88,17 +88,22 @@
 \hfill\begin{minipage}{\dimexpr\textwidth-0.5cm}
 \descript{Projet OpenPaaS::NG}
 Ce projet a pour objectif la réalisation d'un réseau social d'entreprise open-source
-incorporant une suite d'applications collaboratives de bureautique.
+incorporant une suite d'applications collaboratives pair-à-pair de bureautique.
 Le but est ainsi de proposer une alternative viable et libre
-à des solutions telles que Google Apps.
+à des solutions telles que Google Apps. Ce projet est réalisé en collaboration avec l’équipe DaSciM (Data Science and Mining)
+du laboratoire d’informatique de l’École Polytechnique, Linagora, XWiki SAS et Nexedi.
 \\
-% TODO: Présenter le rôle de l'équipe dans ce projet
-% TODO: Introduire les tâches effectuées
-L'ensemble des travaux réalisés ont été implémentés dans la plateforme de démonstration
-\href{https://www.coedit.re}{\customboldlink{MUTE}}.
+Dans le cadre de ce projet, l'équipe COAST travaille sur la fédération interorganisationelle
+de systèmes pair-à-pair et sur la sécurisation des échanges de données dans ce type de collaboration.
+De plus, elle apporte son expertise sur les mécanismes de réplication de données
+et de cohérence à terme dans les systèmes distribués.
+\\
+C'est sur ce dernier point que portaient les tâches que j'ai effectuées dans le cadre de ce projet.
+Afin d'être validés, ces travaux ont été intégrés dans \href{https://www.coedit.re}{\customboldlink{MUTE}},
+la plateforme de démonstration de l'équipe.
 \begin{tightemize}
-\item Correction de bugs présents dans l'implémentation de \emph{LogootSplit}\cite{sp2-l2-9}\cite{sp2-l2-10}
-\item Lecture de la littérature sur les types de données répliquées sans conflits existants et leurs cas d'utilisation
+\item Maintenance de l'implémentation de \emph{LogootSplit}\cite{sp2-l2-9}\cite{sp2-l2-10}
+\item Étude de la littérature sur les types de données répliquées sans conflits existants et leurs cas d'utilisation
 \item Développement et intégration d'un système d'anti-entropie\cite{sp2-l2-2}
 \end{tightemize}
 \sectionsep
@@ -129,8 +134,10 @@ mais aussi de prototyper l'utilisation d'un outil de gestion de processus métie
 \item Conception de la nouvelle architecture de l'application
 \item Réalisation d'une preuve de concept orchestrant les différents services pour jouer un scénario type d'utilisation
 \end{tightemize}
-\sectionsep
+\sectionsep\xdef\tpd{\the\prevdepth}
+\end{minipage}
 
+\hfill\begin{minipage}{\dimexpr\textwidth-0.5cm}
 \descript{Plateforme artEoz}
 \href{http://arteoz.loria.fr/}{\customboldlink{artEoz}} est un outil dédié à l'enseignement de la programmation développé par Martine Gautier et Brigitte Wrobel-Dautcourt.
 Il permet de générer et de visualiser le schéma mémoire correspondant à l'exécution du code Java ou Python saisi par l'utilisateur.
